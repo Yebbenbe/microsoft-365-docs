@@ -50,10 +50,12 @@ For more information about store apps, see [Purchase store apps for Intune](apps
 The Apple stores give you the ability to purchase multiple licenses for an app (or book) that you want to distribute to the members of your organization. Buying licenses in bulk can help you reduce the administrative overhead of tracking multiple purchased copies of apps. Microsoft Intune helps you manage apps and books that you purchased through such a program. You import license information from the store vendor, and track how many licenses you've used. This process helps to ensure that you don't install more copies of the app than you own.
 
 > [!NOTE]
-> You can use Intune policies to block end-users from accessing the app store on their devices. You can also remove purchase restriction by allowing end-users to add new accounts to their device. Doing so will enable end-users to be able to purchase store apps for their personal use.
+> You can use Intune policies to block end-users from accessing the app store on their devices. You can also 3rd-party purchase restrictions (such as on managed Apple IDs) by allowing end-users to add new accounts to their device. Doing so will enable end-users to be able to purchase store apps for their personal use.
 
 the iOS/iPadOS device platforms have a method to purchase apps for your organization in bulk:
 - Apple provides the [Apple Business Manager](apps-purchase-volume.md#apple-business-manager)
+
+For managed Apple IDs, VPP-licensing may be required for the Company Portal app/enrollment, as managed IDs cannot download from the app store. Simply adding the app to InTune does not bypass this. Users can add an additional private Apple account tp regain access to downloading.
 
 > [!NOTE]
 > Managed Google Play only supports free apps. 
